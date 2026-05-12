@@ -9,4 +9,8 @@ public class SoundSlot
     public float Volume { get; set; } = 100;
 
     public string Hotkey { get; set; } = "";
+
+    public bool Loop { get; set; }
+
+    public bool Enabled { get; set; } = true;
 }
