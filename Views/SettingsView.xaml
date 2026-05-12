@@ -1,14 +1,42 @@
 <UserControl x:Class="VoidBoard.Views.SettingsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#1e1e1e">
 
-    <Grid Background="#1e1e1e">
+    <Grid Margin="20">
 
-        <TextBlock
-            Text="settings"
-            Foreground="White"
-            FontSize="22"
-            Margin="20"/>
+        <StackPanel>
+
+            <TextBlock
+                Text="settings"
+                Foreground="White"
+                FontSize="26"
+                Margin="0,0,0,20"/>
+
+            <TextBlock
+                Text="theme"
+                Foreground="White"/>
+
+            <ComboBox
+                Margin="0,5,0,20"
+                Height="35">
+
+                <ComboBoxItem Content="system"/>
+                <ComboBoxItem Content="dark"/>
+                <ComboBoxItem Content="light"/>
+
+            </ComboBox>
+
+            <CheckBox
+                Content="hear sounds myself"
+                Foreground="White"
+                Margin="0,0,0,20"/>
+
+            <Button
+                Content="save settings"
+                Height="35"/>
+
+        </StackPanel>
 
     </Grid>
 
