@@ -1,0 +1,15 @@
+<UserControl x:Class="VoidBoard.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Background="#1e1e1e">
+
+        <TextBlock
+            Text="settings"
+            Foreground="White"
+            FontSize="22"
+            Margin="20"/>
+
+    </Grid>
+
+</UserControl>
