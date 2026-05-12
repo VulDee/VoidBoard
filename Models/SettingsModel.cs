@@ -9,4 +9,8 @@ public class SettingsModel
     public string InputDevice { get; set; } = "";
 
     public string OutputDevice { get; set; } = "";
+
+    public bool StartHidden { get; set; }
+
+    public bool MinimizeToTray { get; set; } = true;
 }
