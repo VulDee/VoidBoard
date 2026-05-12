@@ -2,20 +2,67 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="VoidBoard"
-        Height="700"
+        Height="720"
         Width="1000"
-        WindowStartupLocation="CenterScreen"
-        Background="#1e1e1e">
+        Background="#1e1e1e"
+        WindowStartupLocation="CenterScreen">
 
-    <Grid>
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
         <TextBlock
             Text="VoidBoard"
+            FontSize="30"
+            FontWeight="Bold"
             Foreground="White"
-            FontSize="28"
-            Margin="20,20,0,0"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Left"/>
+            Margin="0,0,0,20"/>
+
+        <ScrollViewer Grid.Row="1">
+
+            <StackPanel>
+
+                <Border
+                    Background="#2a2a2a"
+                    CornerRadius="10"
+                    Padding="12"
+                    Margin="0,0,0,10">
+
+                    <StackPanel>
+
+                        <TextBlock
+                            Text="slot 0"
+                            Foreground="White"
+                            FontSize="18"/>
+
+                        <TextBox
+                            Margin="0,10,0,0"
+                            Height="35"
+                            Background="#1e1e1e"
+                            Foreground="White"
+                            BorderBrush="#444"/>
+
+                        <Slider
+                            Margin="0,10,0,0"
+                            Minimum="0"
+                            Maximum="100"
+                            Value="100"/>
+
+                        <Button
+                            Content="save"
+                            Height="35"
+                            Margin="0,10,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+            </StackPanel>
+
+        </ScrollViewer>
 
     </Grid>
 
